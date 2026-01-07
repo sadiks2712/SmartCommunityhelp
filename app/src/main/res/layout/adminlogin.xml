@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sp4">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left"
+            android:background="@drawable/sp1"
+            android:padding="16dp">
+
+            <TextView
+                android:paddingStart="20dp"
+                android:text="ADMIN LOGIN"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Image -->
+        <ImageView
+            android:layout_marginTop="80dp"
+            android:id="@+id/i2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/otp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Login"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Instruction -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textStyle="italic"
+            android:text="!!! Please enter your credentials !!!"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center" />
+
+        <!-- Email Field -->
+        <!-- Email Field with Icon -->
+        <LinearLayout
+            android:background="@drawable/lback"
+            android:id="@+id/email_layout"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_email"
+                android:contentDescription="Email Icon" />
+
+            <EditText
+
+                android:id="@+id/et_email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:hint="Enter Email"
+                android:background="@android:color/transparent"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <!-- Password Field with Icon -->
+        <LinearLayout
+
+
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:background="@drawable/lback"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_password"
+                android:contentDescription="Password Icon" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:hint="Enter Password"
+                android:background="@android:color/transparent"
+                android:inputType="textPassword" />
+        </LinearLayout>
+        <!-- Login Button -->
+        <FrameLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <Button
+                android:id="@+id/ad"
+                android:text="Login"
+                android:textSize="20dp"
+                android:backgroundTint="@color/dark_blue"
+                android:textColor="@color/beige"
+                android:layout_margin="16dp"
+                android:layout_gravity="center"
+                android:layout_width="180dp"
+                android:layout_height="60dp" />
+
+        </FrameLayout>
+        <!-- Description / Footer Text -->
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="16dp"
+            android:text="By continuing, you agree to our Terms and Conditions and Privacy Policy."
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:gravity="center" />
+
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</ScrollView>
